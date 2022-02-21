@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'stin19';
+
+  ping: string ="";
+
+  handlePing(event: string) {
+    this.ping = event;
+    console.log(event)
+  }
 }
